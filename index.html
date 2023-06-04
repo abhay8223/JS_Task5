@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>Task</title>
+    <script>
+        function reversenumber() {
+            var input = document.getElementById('input').value;
+            var output = parseInt(input.toString().split('').reverse().join(''));
+            document.getElementById('num').innerHTML = output;
+        }
+
+    </script>
+  </head>
+  <body>
+    <input type="" id="input" placeholder="Enter the number">
+    <button onclick="reversenumber()">Reverse Number</button>
+    <p id="num"></p>
+
+  </body>
+</html>
